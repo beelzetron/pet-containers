@@ -1,5 +1,7 @@
 # pet-fedora
 
+[![Docker Repository on Quay](https://quay.io/repository/beelzetron/pet-containers/status "Docker Repository on Quay")](https://quay.io/repository/beelzetron/pet-containers)
+
 This is my Fedora pet container image.
 It includes some tools i use regularly in my sysadmin work.
 
