@@ -5,7 +5,7 @@ MAINTAINER Lorenzo Dalrio <lorenzo.dalrio@gmail.com>
 RUN dnf -y install sudo git tmux powerline powerline-fonts \
     vim-powerline tmux-powerline nmap mock rpm-build rpmlint \
     vim-enhanced ansible ansible-lint bash-completion \
-    python2-requests less man-pages man-db iputils \
+    python2-requests less man-pages man-db iputils openldap-clients \
     && dnf clean all
 
 RUN groupadd -g 1000 lorenzodalrio \
