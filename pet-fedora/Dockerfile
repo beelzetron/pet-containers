@@ -9,6 +9,7 @@ RUN dnf -y install sudo git tmux powerline powerline-fonts xmlstarlet \
     vim-powerline tmux-powerline nmap rpm-build rpmlint java-1.8.0-openjdk-devel \
     vim-enhanced ansible ansible-lint bash-completion patch unzip wget \
     python2-requests less man-pages man-db iputils openldap-clients \
+    mock rpmdevtools \
     && dnf clean all
 
 RUN echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/wheel
