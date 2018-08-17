@@ -38,6 +38,7 @@ RUN dnf -y install java-1.8.0-openjdk-devel \
                    iputils \
                    openldap-clients \
                    buildah \
+                   nmap \
     && dnf clean all
 
 VOLUME /home/lorenzodalrio
