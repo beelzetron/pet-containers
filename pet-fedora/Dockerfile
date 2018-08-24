@@ -31,6 +31,7 @@ RUN dnf -y install java-1.8.0-openjdk-devel \
                    vim-enhanced \
                    ansible \
                    ansible-lint \
+                   puppet \
                    python2-requests \
                    less \
                    man-pages \
