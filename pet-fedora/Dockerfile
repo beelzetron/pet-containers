@@ -38,6 +38,7 @@ RUN dnf -y install java-1.8.0-openjdk-devel \
                    man-db \
                    iputils \
                    openldap-clients \
+                   origin-clients \
                    buildah \
                    nmap \
     && dnf clean all
