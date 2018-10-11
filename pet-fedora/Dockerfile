@@ -17,18 +17,8 @@ RUN dnf -y install java-1.8.0-openjdk-devel \
                    unzip \
                    wget \
                    xmlstarlet \
-                   tmux \
-                   powerline \
-                   powerline-fonts \
-                   vim-powerline \
-                   tmux-powerline \
                    vim-enhanced \
                    tmux \
-                   powerline \
-                   powerline-fonts \
-                   vim-powerline \
-                   tmux-powerline \
-                   vim-enhanced \
                    ansible \
                    ansible-lint \
                    puppet \
@@ -43,9 +33,9 @@ RUN dnf -y install java-1.8.0-openjdk-devel \
                    nmap \
     && dnf clean all
 
-VOLUME /home/lorenzodalrio
+VOLUME /host
 
-WORKDIR /home/lorenzodalrio
+WORKDIR /host
 
 ENV LANG en_US.UTF-8
 
