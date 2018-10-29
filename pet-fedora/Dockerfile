@@ -12,6 +12,8 @@ RUN echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/wheel
 
 RUN echo "config_opts['use_nspawn'] = False" >> /etc/mock/site-defaults.cfg
 
+RUN passwd -d lorenzodalrio && passwd -d root
+
 RUN dnf -y install java-1.8.0-openjdk-devel \
                    patch \
                    unzip \
@@ -33,12 +35,9 @@ RUN dnf -y install java-1.8.0-openjdk-devel \
                    nmap \
     && dnf clean all
 
-VOLUME /host
-
-WORKDIR /host
+VOLUME /home/lorenzodalrio
 
 ENV LANG en_US.UTF-8
 
 USER lorenzodalrio
 CMD ["/bin/bash"]
-
