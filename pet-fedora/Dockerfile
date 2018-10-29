@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:28
+FROM registry.fedoraproject.org/fedora:29
 
 MAINTAINER Lorenzo Dalrio <lorenzo.dalrio@gmail.com>
 
